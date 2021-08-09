@@ -65,17 +65,13 @@
                         <div class="col-xl-12">
                             <div class="card mg-b-20">
                                 <div class="card-header pb-0">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="col-sm-6 col-md-3">
                                             @can('اضافة فاتورة')
-                                            <a href="invoices/create" class="btn btn-primary btn-">أضف فاتوره<i
+                                            <a href="invoices/create" class="btn btn-primary">أضف فاتوره<i
                                                     class="fas fa-plus mr-2"></i></a>
                                             @endcan
                                             @can('تصدير EXCEL')
-                                            <a href="{{url('export_invoices')}}" class="btn btn-success btn-">تصدير اكسيل<i class="fas fa-file-download mr-2"></i></a>
+                                            <a href="{{url('export_invoices')}}" class="btn btn-success">تصدير اكسيل<i class="fas fa-file-download mr-2"></i></a>
                                                 @endcan
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
