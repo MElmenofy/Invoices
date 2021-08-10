@@ -12,11 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//return view('auth.login');
 Route::get('/', function () {
-    return view('auth.login');
+    return view('table-data');
 });
-
 Auth::routes();
 //Auth::routes(['register' => false]);  stop register
 Route::get('/home', 'HomeController@index')->name('home');
